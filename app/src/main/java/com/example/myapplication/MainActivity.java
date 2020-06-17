@@ -2,27 +2,12 @@
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.res.AssetFileDescriptor;
-import android.net.Uri;
-import android.os.Build;
+import android.content.Intent;
 import android.os.Bundle;
-import android.webkit.JsPromptResult;
-import android.webkit.JsResult;
-import android.webkit.WebChromeClient;
-import android.webkit.WebResourceRequest;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.Toast;
 
 import com.tencent.liteav.demo.play.SuperPlayerConst;
-import com.tencent.liteav.demo.play.SuperPlayerModel;
 import com.tencent.liteav.demo.play.SuperPlayerView;
-
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Set;
 
  public class MainActivity extends AppCompatActivity {
 
@@ -78,13 +63,17 @@ import java.util.Set;
         mSuperPlayerView.playWithModel(model);*/
 
 
-        SuperPlayerModel model = new SuperPlayerModel();
-        model.multiURLs = new ArrayList<>();
-        model.multiURLs.add(new SuperPlayerModel.SuperPlayerURL("http://1252463788.vod2.myqcloud.com/95576ef5vodtransgzp1252463788/e1ab85305285890781763144364/v.f10.mp4", "流畅"));
-        model.multiURLs.add(new SuperPlayerModel.SuperPlayerURL("http://1252463788.vod2.myqcloud.com/95576ef5vodtransgzp1252463788/e1ab85305285890781763144364/v.f20.mp4", "标清"));
-        model.multiURLs.add(new SuperPlayerModel.SuperPlayerURL("http://1252463788.vod2.myqcloud.com/95576ef5vodtransgzp1252463788/e1ab85305285890781763144364/v.f30.mp4", "高清"));
-        model.playDefaultIndex = 2;// 默认播放标清
-        mSuperPlayerView.playWithModel(model);
+//        SuperPlayerModel model = new SuperPlayerModel();
+//        model.multiURLs = new ArrayList<>();
+//        model.multiURLs.add(new SuperPlayerModel.SuperPlayerURL("http://1252463788.vod2.myqcloud.com/95576ef5vodtransgzp1252463788/e1ab85305285890781763144364/v.f10.mp4", "流畅"));
+//        model.multiURLs.add(new SuperPlayerModel.SuperPlayerURL("http://1252463788.vod2.myqcloud.com/95576ef5vodtransgzp1252463788/e1ab85305285890781763144364/v.f20.mp4", "标清"));
+//        model.multiURLs.add(new SuperPlayerModel.SuperPlayerURL("http://1252463788.vod2.myqcloud.com/95576ef5vodtransgzp1252463788/e1ab85305285890781763144364/v.f30.mp4", "高清"));
+//        model.playDefaultIndex = 2;// 默认播放标清
+//        mSuperPlayerView.playWithModel(model);
+
+
+         Intent intent = new Intent(this, TestRecyclerViewActivity.class);
+         startActivity(intent);
 
 
 //       String s = "9557762000000200";
