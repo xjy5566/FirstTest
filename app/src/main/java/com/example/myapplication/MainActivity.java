@@ -72,7 +72,7 @@ import com.tencent.liteav.demo.play.SuperPlayerView;
 //        mSuperPlayerView.playWithModel(model);
 
 
-         Intent intent = new Intent(this, TestRecyclerViewActivity.class);
+         Intent intent = new Intent(this, TestHandlerActivity.class);
          startActivity(intent);
 
 
