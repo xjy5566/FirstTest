@@ -72,7 +72,7 @@ import com.tencent.liteav.demo.play.SuperPlayerView;
 //        mSuperPlayerView.playWithModel(model);
 
 
-         Intent intent = new Intent(this, TestHandlerActivity.class);
+         Intent intent = new Intent(this, TestTouchActivity.class);
          startActivity(intent);
 
 
