@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.activity;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.myapplication.R;
 import com.example.myapplication.entity.Person;
 
 public class TestHandlerActivity extends AppCompatActivity {

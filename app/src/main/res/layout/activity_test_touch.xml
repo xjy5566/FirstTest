@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.example.myapplication.MyLayout
+    <com.example.myapplication.activity.MyLayout
         android:id="@+id/linearlayout"
         android:layout_width="match_parent"
         android:layout_height="300dp"
@@ -39,7 +39,7 @@
             android:layout_gravity="center"
             android:background="@drawable/green_thumb" />
 
-    </com.example.myapplication.MyLayout>
+    </com.example.myapplication.activity.MyLayout>
 
 
 

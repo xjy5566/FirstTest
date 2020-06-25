@@ -1,4 +1,4 @@
- package com.example.myapplication;
+ package com.example.myapplication.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.webkit.WebView;
 
+import com.example.myapplication.R;
 import com.tencent.liteav.demo.play.SuperPlayerConst;
 import com.tencent.liteav.demo.play.SuperPlayerView;
 
@@ -72,7 +73,7 @@ import com.tencent.liteav.demo.play.SuperPlayerView;
 //        mSuperPlayerView.playWithModel(model);
 
 
-         Intent intent = new Intent(this, TestTouchActivity.class);
+         Intent intent = new Intent(this, TestCustomViewActivity.class);
          startActivity(intent);
 
 

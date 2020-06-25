@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.activity;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -6,11 +6,12 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.myapplication.R;
 
 public class TestTouchActivity extends AppCompatActivity {
 
@@ -40,7 +41,7 @@ public class TestTouchActivity extends AppCompatActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 Log.d("TAG", "linearlayout onTouch execute, action " + event.getAction());
-                return false;
+                return true;
             }
         });
 
@@ -51,13 +52,13 @@ public class TestTouchActivity extends AppCompatActivity {
             }
         });
 
-        button.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                Log.d("TAG", "button onTouch execute, action " + event.getAction());
-                return true;
-            }
-        });
+//        button.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//                Log.d("TAG", "button onTouch execute, action " + event.getAction());
+//                return true;
+//            }
+//        });
 
         textview.setOnClickListener(new View.OnClickListener() {
             @Override

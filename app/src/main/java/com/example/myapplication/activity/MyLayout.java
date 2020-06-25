@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.activity;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -13,7 +13,7 @@ public class MyLayout extends LinearLayout {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        return false;
+        return true;
     }
 
 }
